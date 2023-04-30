@@ -1,0 +1,243 @@
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+    transform-origin: center center;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    transform: scale(0.91);
+    animation-timing-function: ease-in;
+  }
+  17% {
+    transform: scale(0.98);
+    animation-timing-function: ease-out;
+  }
+  33% {
+    transform: scale(0.87);
+    animation-timing-function: ease-in;
+  }
+  45% {
+    transform: scale(1);
+    animation-timing-function: ease-out;
+  }
+}
+@keyframes shadow-drop-bottom {
+  0% {
+    box-shadow: 0 0 0 0 transparent;
+  }
+  to {
+    box-shadow: 0 12px 20px -12px rgb(0 0 0/35%);
+  }
+}
+@keyframes shadow-inset-center {
+  0% {
+    box-shadow: inset 0 0 0 0 transparent;
+  }
+  to {
+    box-shadow: inset 0 0 14px 0 rgb(0 0 0/50%);
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.champagneSunsetIs {
+  margin: 0;
+}
+.champagneSunsetIsContainer {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+  font-size: inherit;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+}
+.appleIcon {
+  position: relative;
+  width: 22px;
+  height: 26.13px;
+  flex-shrink: 0;
+}
+.downloadPlastiques101 {
+  position: relative;
+  font-size: 22px;
+  font-weight: 500;
+  font-family: var(--font-suisse-intl);
+  color: var(--color-white);
+  text-align: center;
+  text-shadow: 0 4px 3px #65beff;
+}
+.downloadbutton {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-3xs);
+  background-color: var(--color-dodgerblue-100);
+  border-radius: 10px;
+  box-shadow: 0 8px 43px -11px #5690ff;
+  width: 350px;
+  height: 40px;
+  flex-shrink: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-3xs);
+  opacity: 1;
+}
+.downloadbutton.animate {
+  animation: 8s ease 0s infinite normal backwards pulsate;
+}
+.downloadbutton:hover {
+  animation: 1s ease 0s 1 alternate forwards shadow-drop-bottom;
+  opacity: 1;
+}
+.downloadbutton:active {
+  animation: 1s ease 0s 1 normal none shadow-inset-center;
+  opacity: 1;
+}
+.macos {
+  position: relative;
+}
+.frameChild,
+.vectorIcon {
+  position: relative;
+  width: 3px;
+  height: 3px;
+  flex-shrink: 0;
+}
+.vectorIcon {
+  width: 15px;
+  height: 15px;
+}
+.downloadbuttonParent,
+.macosParent {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.macosParent {
+  flex-direction: row;
+  padding: var(--padding-3xs);
+  gap: var(--gap-3xs);
+}
+.downloadbuttonParent {
+  flex-direction: column;
+  gap: 6px;
+  font-size: var(--font-size-sm);
+}
+.lookingForAContainer {
+  align-self: stretch;
+  position: relative;
+  font-size: 16px;
+  text-decoration: underline;
+  font-weight: 300;
+}
+.champagneSunsetIsAvailableParent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  padding: 0 var(--padding-6xl);
+  align-items: center;
+  justify-content: flex-start;
+  gap: 57px;
+}
+.idesPlastiques {
+  position: relative;
+  font-weight: 500;
+}
+.gettingStarted,
+.nfts {
+  text-decoration: none;
+  position: relative;
+  font-weight: 300;
+  color: inherit;
+}
+.gettingStarted:hover {
+  color: var(--color-white);
+}
+.ideesplastiquesLinks {
+  font-size: var(--font-size-xs);
+}
+.ideesplastiques,
+.ideesplastiquesLinks {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-8xs);
+}
+.linksLine1,
+.linksLine1Wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+}
+.linksLine1 {
+  flex: 1;
+  padding: var(--padding-3xs) 0;
+  gap: 17px;
+}
+.linksLine1Wrapper {
+  align-self: stretch;
+}
+.copyrightChild {
+  border-top: 1px solid #5e5e5e;
+  box-sizing: border-box;
+  height: 1px;
+  flex-shrink: 0;
+}
+.copyright2023,
+.copyrightChild {
+  align-self: stretch;
+  position: relative;
+}
+.copyright,
+.lowerBanner,
+.mobileDownload {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.copyright {
+  align-self: stretch;
+  padding: var(--padding-8xs) 0;
+  justify-content: center;
+  gap: var(--gap-8xs);
+  font-size: 10px;
+}
+.lowerBanner,
+.mobileDownload {
+  overflow: hidden;
+  justify-content: flex-end;
+}
+.lowerBanner {
+  align-self: stretch;
+  background-color: #000;
+  padding: 20px var(--padding-6xl);
+  gap: 4px;
+  font-size: var(--font-size-sm);
+}
+.mobileDownload {
+  position: relative;
+  background-color: var(--color-gray-100);
+  width: 100%;
+  height: 905px;
+  gap: 120px;
+  opacity: 0;
+  text-align: center;
+  font-size: var(--font-size-17xl);
+  color: var(--color-white);
+  font-family: var(--font-suisse-intl);
+}
+.mobileDownload.animate {
+  animation: 1s ease-in 0s 1 normal forwards fade-in;
+}

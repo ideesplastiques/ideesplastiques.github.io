@@ -1,0 +1,54 @@
+@font-face {
+  font-family: "Suisse Intl";
+  src: url("/public/SuisseIntl-Regular.0a461460.otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Suisse Intl";
+  src: url("/public/SuisseIntl-Regular.otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Suisse Intl";
+  src: url("/public/SuisseIntl-SemiBold.otf");
+  font-weight: 600;
+}
+
+body {
+  margin: 0;
+  line-height: normal;
+}
+:root {
+  /* fonts */
+  --font-suisse-intl: "Suisse Intl";
+
+  /* font sizes */
+  --font-size-xs: 12px;
+  --font-size-sm: 14px;
+  --font-size-17xl: 36px;
+  --font-size-xl: 20px;
+  --font-size-13xl: 32px;
+  --font-size-29xl: 48px;
+  --font-size-45xl: 64px;
+
+  /* Colors */
+  --color-gray-100: #878787;
+  --color-white: #fff;
+  --color-dodgerblue-100: #0094ff;
+  --color-dodgerblue-200: #0093ff;
+
+  /* Gaps */
+  --gap-8xs: 5px;
+  --gap-3xs: 10px;
+  --gap-6xl: 25px;
+
+  /* Paddings */
+  --padding-6xl: 25px;
+  --padding-8xs: 5px;
+  --padding-3xs: 10px;
+  --padding-9xl: 28px;
+
+  /* border radiuses */
+  --br-7xs: 6px;
+  --br-xs: 12px;
+}

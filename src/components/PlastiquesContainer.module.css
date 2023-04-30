@@ -1,0 +1,88 @@
+@keyframes scale-down-center {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+}
+.plastiques101 {
+  position: relative;
+  font-weight: 600;
+}
+.virtualArtGallery {
+  margin: 0;
+}
+.discover,
+.virtualArtGalleryContainer {
+  position: relative;
+  font-size: var(--font-size-29xl);
+}
+.discover {
+  font-size: var(--font-size-13xl);
+  font-family: var(--font-suisse-intl);
+  color: var(--color-white);
+  text-align: center;
+}
+.desktopDiscoverbutton {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-3xs) var(--padding-9xl);
+  background-color: var(--color-dodgerblue-200);
+  border-radius: var(--br-xs);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.desktopDiscoverbutton:hover {
+  background-color: var(--color-white);
+}
+.desktopDiscoverbutton:active {
+  animation: 1s ease 0s 1 normal none scale-down-center;
+  opacity: 1;
+}
+.poppin,
+.whats {
+  font-family: var(--font-suisse-intl);
+}
+.poppin {
+  font-weight: 500;
+}
+.whatsPoppin {
+  position: relative;
+  font-size: var(--font-size-13xl);
+  color: var(--color-white);
+  text-align: left;
+}
+.desktopDiscoverbuttonParent,
+.desktopWhatspoppinbutton,
+.plastiques101Parent {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.desktopWhatspoppinbutton {
+  cursor: pointer;
+  border: 2px solid var(--color-white);
+  padding: var(--padding-3xs) var(--padding-9xl);
+  background-color: transparent;
+  border-radius: var(--br-xs);
+}
+.desktopDiscoverbuttonParent,
+.plastiques101Parent {
+  gap: var(--gap-6xl);
+}
+.plastiques101Parent {
+  position: absolute;
+  top: calc(50% - 146.5px);
+  left: 198.5px;
+  flex-direction: column;
+  text-align: left;
+  font-size: var(--font-size-45xl);
+  color: var(--color-white);
+  font-family: var(--font-suisse-intl);
+}
